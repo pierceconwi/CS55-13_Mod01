@@ -17,6 +17,8 @@ let myServer = myhttp.createServer(
   } else {
     mytext = "I don't know who you are!";
   }
+
+  mytext = mytext + " - Please help.";
     
     // creates an http response header, including status code ("200 ok") and the content type
     myresponse.writeHead( 200, { "Content-Type": "text/plain" } );
